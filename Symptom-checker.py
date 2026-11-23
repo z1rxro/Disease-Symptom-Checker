@@ -14,7 +14,7 @@ DISEASES = {
     "Gastroenteritis": "diarrhea,vomiting,stomach pain,nausea",
 }
 
-# Turn each comma-separated string into a clean set of symptoms
+
 DISEASE_SYMPTOMS = {
     name: {s.strip().lower() for s in symptoms.split(",")}
     for name, symptoms in DISEASES.items()
